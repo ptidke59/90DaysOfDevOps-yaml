@@ -1,0 +1,20 @@
+name: personal information
+
+on:
+ workflow_dispatch:
+ 
+jobs:
+
+ details:
+ 
+  runs-on: ubuntu-latest
+
+    steps:
+      - name: My name
+        run: echo "Pramod Tidke"
+      - name: experience
+        run: echo "2 year of experience"
+      - name: role is
+        run: echo "software engineer"
+      - name: learning
+        run: echo "true"
