@@ -1,0 +1,31 @@
+name: server informatin
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: server name
+        run: echo "ubuntu server"
+      - name: ip address
+        run: echo "192.168.1.1"
+      - name: ports
+        run: echo "80, 443, 22"
+      - name: data information
+        run: |
+          echo "database:"
+          echo "  host: localhost"
+          echo "  port: 3306"
+          echo "  credential:"
+          echo "    username: root"
+          echo "    password: password"
+      - name: services of database
+        run: >
+          echo "services:"
+          echo "  - mysql"
+          echo "  - postgresql"
+          echo "  - mongodb"
