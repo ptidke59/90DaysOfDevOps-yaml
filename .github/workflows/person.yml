@@ -1,13 +1,11 @@
 name: personal information
 
 on:
- workflow_dispatch:
- 
-jobs:
+  workflow_dispatch:
 
- details:
- 
-  runs-on: ubuntu-latest
+jobs:
+  details:
+    runs-on: ubuntu-latest
 
     steps:
       - name: My name
