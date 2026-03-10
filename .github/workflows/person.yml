@@ -16,3 +16,7 @@ jobs:
         run: echo "software engineer"
       - name: learning
         run: echo "true"
+      - name: tools
+        run: echo "git, docker, kubernetes, ansible, terraform"
+      - name: hobbie
+        run: echo [coding, music, gaming]
