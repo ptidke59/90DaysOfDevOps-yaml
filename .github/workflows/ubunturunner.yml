@@ -1,4 +1,4 @@
-name: macos runner
+name: ubuntu runner
 
 on:
   workflow_dispatch:
