@@ -1,8 +1,7 @@
 name: server informatin
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   server:
