@@ -32,9 +32,9 @@ jobs:
         run: echo "Repository is ${{ github.repository }}"
 
       # Intentional Failure Step (for learning)
-      - name: Intentional Failure Example
-        run: exit 1
-        continue-on-error: true
+      # - name: Intentional Failure Example
+      #   run: exit 1
+      #   continue-on-error: true
 
       - name: Pipeline Continues After Failure
         run: echo "Pipeline continued because continue-on-error was enabled."
