@@ -1,0 +1,15 @@
+name: ubuntu runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ubuntu-runner:
+    runs-on: ubuntu-latest
+
+    steps:
+      # - name: Checkout Repository
+      #   uses: actions/checkout@v4
+
+      - name: Print Runner Name
+        run: echo "This workflow is running on ${{ runner.os }} runner!"
