@@ -1,0 +1,40 @@
+name: GitHub Actions Practice Workflow
+
+on: push
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Print Greeting
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Print Current Date and Time
+        run: date
+
+      - name: Print Branch Name
+        run: echo "Branch name is ${{ github.ref_name }}"
+
+      - name: List Files in Repository
+        run: ls -la
+
+      - name: Print Runner Operating System
+        run: echo "Runner OS is $RUNNER_OS"
+
+      - name: Show GitHub Actor (who triggered workflow)
+        run: echo "Triggered by ${{ github.actor }}"
+
+      - name: Show Repository Name
+        run: echo "Repository is ${{ github.repository }}"
+
+      # Intentional Failure Step (for learning)
+      - name: Intentional Failure Example
+        run: exit 1
+        continue-on-error: true
+
+      - name: Pipeline Continues After Failure
+        run: echo "Pipeline continued because continue-on-error was enabled."
