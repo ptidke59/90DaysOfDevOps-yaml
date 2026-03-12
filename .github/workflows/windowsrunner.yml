@@ -1,11 +1,11 @@
-name: macos runner
+name: windows runner
 
 on:
   workflow_dispatch:
 
 jobs:
   ubuntu-runner:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       # - name: Checkout Repository

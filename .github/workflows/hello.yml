@@ -1,7 +1,8 @@
 name: GitHub Actions Practice Workflow
 
-on: push
-
+on:
+  # push
+  workflow_dispatch:
 jobs:
   greet:
     runs-on: ubuntu-latest
